@@ -7,6 +7,13 @@ $transparent-white: hsla(0, 0%, 100%, 0.75);
 $very-light-gray: hsl(0, 0%, 95%);
 
 // Fonts
-$title-font: 'Big Shoulders Display', cursive;
-$text-font: 'Lexend Deca', sans-serif;
+$heading-font: 'Big Shoulders Display', cursive;
+$paragraph-font: 'Lexend Deca', sans-serif;
 $font-size: 15px;
+
+// Cards color
+$cards-colors: (
+   sedans: $bright-orange,
+   suvs: $dark-cyan,
+   luxury: $very-dark-cyan,
+);

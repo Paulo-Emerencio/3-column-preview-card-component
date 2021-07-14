@@ -8,7 +8,9 @@
 }
 body {
    @include utils.flex-center;
-   font-size: utils.$font-size;
    min-height: 100vh;
    background-color: utils.$very-light-gray;
+
+   font-family: utils.$paragraph-font;
+   font-size: utils.$font-size;
 }
