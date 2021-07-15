@@ -11,9 +11,12 @@ $heading-font: 'Big Shoulders Display', cursive;
 $paragraph-font: 'Lexend Deca', sans-serif;
 $font-size: 15px;
 
-// Cards color
-$cards-colors: (
+// Cards color map
+$cards-map: (
    sedans: $bright-orange,
    suvs: $dark-cyan,
    luxury: $very-dark-cyan,
 );
+
+//Media Query
+$mobile-size: 930px;

@@ -1,14 +1,24 @@
 @use '../utils' as *;
-@use '../base';
 
 main {
-   display: flex;
+   @include flex-center;
+   min-height: 97vh;
+   
+   @include responsive($mobile-size) {
+      flex-direction: column;
+      margin: 40px 0;
+   }
 }
 
 .card {
    width: 305px;
    height: 500px;
    padding: 48px;
+
+   @include responsive($mobile-size) {
+      width: 328px;
+      height: 442px;
+   }
 
    &-container {
       position: relative;
@@ -50,7 +60,7 @@ main {
    }
 }
 
-@each $class, $color in $cards-colors {
+@each $class, $color in $cards-map {
    .#{$class} {
       background-color: $color;
 
@@ -59,6 +69,15 @@ main {
       }
       @if $class == luxury {
          border-radius: 0 10px 10px 0;
+      }
+
+      @include responsive($mobile-size) {
+         @if $class == sedans {
+            border-radius: 10px 10px 0 0;
+         }
+         @if $class == luxury {
+            border-radius: 0 0 10px 10px;
+         }
       }
 
       a { color: $color; }

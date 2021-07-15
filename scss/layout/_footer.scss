@@ -1,0 +1,17 @@
+@use '../utils' as *;
+
+footer {
+   @include flex-center;
+   font-size: .7em;
+
+   @include responsive($mobile-size) {
+      margin-bottom: 20px;
+   }
+
+   a {
+      color: $dark-cyan;
+      &:hover {
+         color: $bright-orange;
+      }
+   }
+}
