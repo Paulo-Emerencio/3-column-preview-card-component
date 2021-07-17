@@ -1,7 +1,7 @@
 @use '../utils' as *;
 
 footer {
-   @include flex-center;
+   text-align: center;
    font-size: .7em;
 
    @include responsive($mobile-size) {
